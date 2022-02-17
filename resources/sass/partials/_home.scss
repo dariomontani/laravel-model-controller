@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .card {
+        h1 {
+            color: rgb(172, 0, 0);
+            margin-bottom: 1em;
+        }
+        width: 250px;
+        background-color: rgb(38, 55, 66);
+        color: white;
+        padding: 1em;
+        margin: 1em;
+        line-height: 2em;
+    }
+}

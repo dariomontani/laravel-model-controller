@@ -1,14 +1,15 @@
 @extends('layouts.base')
 
 @section('content')
-    <div>
+    <div class="container">
         @foreach ($movies as $movie)
-            <p>{{$movie->title}}</p>
-            <p>{{$movie->original_title}}</p>
-            <p>{{$movie->nationality}}</p>
-            <p>{{$movie->date}}</p>
-            <p>{{$movie->vote}}</p>
+        <div class="card">
+            <h1>{{$movie->title}}</h1>
+            <p>Original Title: {{$movie->original_title}}</p>
+            <p>Nationality: {{$movie->nationality}}</p>
+            <p>Date: {{$movie->date}}</p>
+            <p>Vote: {{$movie->vote}}</p>
+        </div>
         @endforeach
     </div>
-    home
 @endsection 
